@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bciit news project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/bciit.css' %}">
+</head>
+<body>
+    
+    <h1 class="main-heading">{{ event.title }}</h1>
+
+<p class="description">{{ event.description }}</p>
+
+<div class="container">
+
+    <div class="row">
+
+        {% for img in event.images.all %}
+
+        <div class="col-md-4 mb-4">
+
+            <img src="{{ img.image.url }}" class="gallery-img">
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+<div class="custom_bg">
+
+    <a href="{% url 'event' %}" class="btn btn-primary">Back To Home Page </a>
+
+</div>
+
+</body>

@@ -1,0 +1,247 @@
+.jumbotron {
+    margin-top: 0px;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+.top_section{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(222, 7, 7);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    background: rgba(227, 227, 228, 0.8);
+    padding: 10px 10px;
+    border-radius: 8px;
+    
+}
+
+.hero_buttons{
+    position: absolute;
+    font-size: 70px;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    
+}
+.hero_buttons a {
+    margin: 20px;
+
+}
+
+.hero_buttons:hover {
+    transform: scale(1.05);
+
+}
+
+
+.main-heading {
+    text-align: center;
+    margin-top: 0px;
+    color: red;
+    background: rgba(255,255,255,0.8);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+
+}
+.custom_bg{
+    display: inline-block;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    
+  
+}
+.custom_bg:hover {
+    transform: scale(1.03);
+
+}
+
+
+/* ===== CARDS ===== */
+
+.custom-card {
+    margin-bottom: 50px;
+    transition: 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.custom-card img {
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+
+}
+
+
+/* ===== GALLERY ===== */
+
+.gallery-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    padding: 15px;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+
+}
+
+/* ===== DESCRIPTION ===== */
+
+.profile-main-container {
+    display: flex !important; 
+    flex-direction: row !important;
+    position: relative !important; 
+    align-items: flex-start; 
+    gap: 30px;
+    padding: 20px;
+    margin-top: 50px; 
+    width: 100%;
+}
+
+.profile-image-side {
+    flex: 0 0 450px;        
+}
+ .profile-image-side img{
+    height: 450px;
+ }
+
+.profile-description-side {
+    flex: 1;                  
+    max-width: 800px;
+}
+
+.profile-description-side:hover {
+    transform: scale(1.05);
+
+}  
+
+/* Ensure the description takes full width of its side container */
+.description {
+    width: 100%;
+    margin: 10;   
+    white-space: pre-line; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.954);
+    background: rgba(246, 234, 192, 0.986);
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-family: sans-serif;
+    
+}  
+
+.faculty-description{
+    width: 125%;
+    margin: 10;   
+    white-space: pre-line; 
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
+    background: rgba(248, 237, 199, 0.986);
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 21px;
+    font-family: sans-serif;
+
+}
+
+
+
+/* ===== ENQUIRY PAGE ===== */
+
+/* ============================= */
+
+.enquiry-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+
+
+.enquiry-container {
+    width: 100%;
+    max-width: 380px;
+    max-height: 95vh;
+    overflow-y: auto;   
+    background: rgba(255,255,255,0.92);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+}
+
+
+
+.enquiry-container h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 8px; 
+    color: red;
+    font-weight: bold;
+}
+
+
+
+.enquiry-container label {
+    font-weight: bold;
+}
+
+
+
+.enquiry-container input,
+.enquiry-container textarea,
+.enquiry-container select {
+    height: 40px;
+    padding: 4px;           
+    margin-bottom: 8px;    
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+
+
+.enquiry-container button {
+    padding: 8px;
+    background-color: #198754;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.enquiry-container button:hover {
+    background-color: #146c43;
+}
+
+
+body {
+    background-image: url('https://imgs.search.brave.com/kcWrwJpaVjo33UmkxTi0dpsduymfiKQiN9OpRujEs_k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGljLWNvbnRl/bnRzLnlvdXRoNHdv/cmsuY29tL3VuaXZl/cnNpdHkvRG9jdW1l/bnRzL0NvbGxlZ2Vz/L25ld3NFdmVudC9j/ZWVhMGYzMC0yNDQw/LTQ4ZjAtODg0OC01/NGJhMDE1MDZlYjMu/anBn') !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: Arial, sans-serif;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    background-position: center;
+      
+}
